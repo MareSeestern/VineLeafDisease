@@ -1,10 +1,8 @@
-<a href="http://fvcproductions.com"><img src="https://avatars1.githubusercontent.com/u/4284691?v=3&s=200" title="FVCproductions" alt="FVCproductions"></a>
+<a href="https://raw.githubusercontent.com/MareSeestern/VineLeafDisease/master/res/IMG_2417.JPG?token=AK7DBRW6IEW2N3ABYX6NDZ27ND43U" title="vine" alt="vine"></a>
 
-<!-- [![FVCproductions](https://avatars1.githubusercontent.com/u/4284691?v=3&s=200)](http://fvcproductions.com) -->
 
-***INSERT GRAPHIC HERE (include hyperlink in image)***
 
-# Repository Title Goes Here
+# Vine Leaf Disease 
 
 > Subtitle or Short Description Goes Here
 
@@ -12,93 +10,41 @@
 
 > include terms/tags that can be searched
 
-**Badges will go here**
-
-- build status
-- issues (waffle.io maybe)
-- devDependencies
-- npm package
-- coverage
-- slack
-- downloads
-- gitter chat
-- license
-- etc.
-
-[![Build Status](http://img.shields.io/travis/badges/badgerbadgerbadger.svg?style=flat-square)](https://travis-ci.org/badges/badgerbadgerbadger) [![Dependency Status](http://img.shields.io/gemnasium/badges/badgerbadgerbadger.svg?style=flat-square)](https://gemnasium.com/badges/badgerbadgerbadger) [![Coverage Status](http://img.shields.io/coveralls/badges/badgerbadgerbadger.svg?style=flat-square)](https://coveralls.io/r/badges/badgerbadgerbadger) [![Code Climate](http://img.shields.io/codeclimate/github/badges/badgerbadgerbadger.svg?style=flat-square)](https://codeclimate.com/github/badges/badgerbadgerbadger) [![Github Issues](http://githubbadges.herokuapp.com/badges/badgerbadgerbadger/issues.svg?style=flat-square)](https://github.com/badges/badgerbadgerbadger/issues) [![Pending Pull-Requests](http://githubbadges.herokuapp.com/badges/badgerbadgerbadger/pulls.svg?style=flat-square)](https://github.com/badges/badgerbadgerbadger/pulls) [![Gem Version](http://img.shields.io/gem/v/badgerbadgerbadger.svg?style=flat-square)](https://rubygems.org/gems/badgerbadgerbadger) [![License](http://img.shields.io/:license-mit-blue.svg?style=flat-square)](http://badges.mit-license.org) [![Badges](http://img.shields.io/:badges-9/9-ff6799.svg?style=flat-square)](https://github.com/badges/badgerbadgerbadger)
-
-- For more on these wonderful ~~badgers~~ badges, refer to <a href="http://badges.github.io/badgerbadgerbadger/" target="_blank">`badgerbadgerbadger`</a>.
-
-***INSERT ANOTHER GRAPHIC HERE***
-
-[![INSERT YOUR GRAPHIC HERE](http://i.imgur.com/dt8AUb6.png)]()
-
-- Most people will glance at your `README`, *maybe* star it, and leave
-- Ergo, people should understand instantly what your project is about based on your repo
-
-> Tips
-
-- HAVE WHITE SPACE
-- MAKE IT PRETTY
-- GIFS ARE REALLY COOL
-
-> GIF Tools
-
-- Use <a href="http://recordit.co/" target="_blank">**Recordit**</a> to create quicks screencasts of your desktop and export them as `GIF`s.
-- For terminal sessions, there's <a href="https://github.com/chjj/ttystudio" target="_blank">**ttystudio**</a> which also supports exporting `GIF`s.
-
-**Recordit**
-
-![Recordit GIF](http://g.recordit.co/iLN6A0vSD8.gif)
-
-**ttystudio**
-
-![ttystudio GIF](https://raw.githubusercontent.com/chjj/ttystudio/master/img/example.gif)
-
----
-
 ## Table of Contents (Optional)
 
-> If your `README` has a lot of info, section headers might be nice.
 
-- [Installation](#installation)
-- [Features](#features)
-- [Contributing](#contributing)
-- [Team](#team)
-- [FAQ](#faq)
-- [Support](#support)
-- [License](#license)
+- [Projektbeschreibung](#Projektschreibung)
+- [Inhalt](#Inhalt)
+- [Setup](#Setup)
 
 
 ---
 
-## Example (Optional)
+## Projektbeschreibung
+Wir haben eine Handy-App programmiert die Blattkrankheiten von Weinreben mit Hilfe von Künstlicher Intelligenz klassifiziert. 
 
-```javascript
-// code away!
+Dadurch erhoffen wir uns einen deutlich geringeren Pestizideinsatz, da die Krankheit früh und einfach mit unserer App erkannt, bestimmt und behandelt werden kann bevor sie sich auf weitere Weinreben ausweitet bzw. sie die Pflanzen so stark schwächt, dass der Ertrag enorm sinkt. Daher wirkt sich unser Projekt auch positiv auf den Ertrag aus, wodurch langfristig Nutzanbaufläche reduziert werden kann.
 
-let generateProject = project => {
-  let code = [];
-  for (let js = 0; js < project.length; js++) {
-    code.push(js);
-  }
-};
-```
+Im Moment unterscheidet bzw. erkennt unsere künstliche Intelligenz (KI), verbunden mit unserer App zwischen vier verschiedenen Krankheitstypen (Echter Mehltau, falscher Mehltau, Esca und Schwarzholzkrankheit). Da eine KI für das Training eine sehr großen Datensatz benötigt, diese jedoch nur in begrenztem Umfang zur Verfügung stehen haben wir auch eigene Aufnahmen der Blattkrankheiten gemacht. Zukünftig planen wir den Datensatz auf weitere Weinrebenkrankheiten auszuweiten. Zudem planen wir andere landwirtschaftliche Nutzpflanzen mit häufigen Schädlings- und Pilzbefällen hinzufügen und somit den Pestizideinsatz allgemein deutlich zu verringern.
 
----
+Wie funktioniert die KI bzw. App für den Anwender? Die Anwendung ist sehr einfach: Nach dem Download und öffnen unserer App wird ein Bild von dem Weinrebenblatt mit dem Handy gemacht. Das erstellt Bild wird von der KI analysiert und gibt anschließend die klassifizierte Krankheits aus.
 
-## Installation
 
-- All the `code` required to get started
-- Images of what it should look like
+## Inhalt
+
+Unser Projekt lässt sich in folgende Parts unterteilen:
+- Python Datei, um Bilder zu formatieren und aus Videos zu exportieren (siehe Ordner PreProcessing)
+- Python Notebook, um das Modell zu trainieren und anschließen zu speichern.
+- Python Datei, um das Modell zu testen
+- Android Studio Projekt, welche mit dem Modell als '.tflite' die Krankheit klassifiziert
 
 ### Clone
 
-- Clone this repo to your local machine using `https://github.com/fvcproductions/SOMEREPO`
+- Clone dieses Repository mit Hilfe von GitHub Desktop oder über den Browser auf Deine lokale Maschiene.
 
 ### Setup
+Wir nutzen als Programme Android Studio (4.0.1) und Anaconda.
 
-- If you want more syntax highlighting, format your code like this:
 
 > update and install this package first
 
