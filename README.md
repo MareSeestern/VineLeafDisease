@@ -4,14 +4,13 @@
 
 # Vine Leaf Disease 
 
-> Subtitle or Short Description Goes Here
+> Klassifizieren von Weinblattkrankheiten mit Künstlicher Intelligenz
 
-> ideally one sentence
+> Erstellt von: Maria-Theresa Licka und Mario Schweikert
 
-> include terms/tags that can be searched
 
-## Table of Contents (Optional)
 
+## Table of Contents 
 
 - [Projektbeschreibung](#Projektschreibung)
 - [Inhalt](#Inhalt)
@@ -38,31 +37,31 @@ Unser Projekt lässt sich in folgende Parts unterteilen:
 - Python Datei, um das Modell zu testen
 - Android Studio Projekt, welche mit dem Modell als '.tflite' die Krankheit klassifiziert
 
-### Clone
+# Clone
 
-- Clone dieses Repository mit Hilfe von GitHub Desktop oder über den Browser auf Deine lokale Maschiene.
+- Klone dieses Repository mit Hilfe von GitHub Desktop oder über den Browser auf Deine lokale Maschiene.
 
-### Setup
-Wir nutzen als Programme Android Studio (4.0.1) und Anaconda.
+# Setup
+Wir nutzen als Programme Android Studio (4.0.1) und Anaconda. Der Datensatz sollte hier über Kaggle heruntergeladen werden und in
+VineLeafDisease\data eingefügt werden.
 
-
-> update and install this package first
-
-```shell
-$ brew update
-$ brew install fvcproductions
-```
-
-> now install npm and bower packages
+## Trainieren von dem Modell (Datensatz benötigt)
+> Installieren von den nötigen Bibliotheken in "Anaconda Prompt"
 
 ```shell
-$ npm install
-$ bower install
+$ pip install -r requirements.txt
 ```
 
-- For all the possible languages that support syntax highlithing on GitHub (which is basically all of them), refer <a href="https://github.com/github/linguist/blob/master/lib/linguist/languages.yml" target="_blank">here</a>.
+> Nun kann das Training über folgenden Befehl gestartet werden:
 
----
+```shell
+$ cd train
+$ python train_model.py
+```
+
+
+## Builden von der App
+
 
 ## Features
 ## Usage (Optional)
