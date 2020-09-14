@@ -42,10 +42,10 @@ Unser Projekt lässt sich in folgende Parts unterteilen:
 - Klone dieses Repository mit Hilfe von GitHub Desktop oder über den Browser auf Deine lokale Maschiene.
 
 # Setup
-Wir nutzen als Programme Android Studio (4.0.1) und Anaconda. Der Datensatz sollte hier über Kaggle heruntergeladen werden und in
-VineLeafDisease\data eingefügt werden.
+Wir nutzen als Programme Android Studio (4.0.1) und Anaconda. 
 
 ## Trainieren von dem Modell (Datensatz benötigt)
+Der selbsterstellte Datensatz sollte hier über Kaggle heruntergeladen werden und in VineLeafDisease\data eingefügt werden.
 > Installieren von den nötigen Bibliotheken in "Anaconda Prompt"
 
 ```shell
@@ -61,6 +61,10 @@ $ python train_model.py
 
 
 ## Builden von der App
+
+Dazu wird das Android-Studio Projekt in Android-Studio geöffnet.
+https://developer.android.com/studio/run/device
+https://abhiandroid.com/androidstudio/generate-signed-apk-android-studio.html
 
 
 ## Features
