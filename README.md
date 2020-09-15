@@ -87,7 +87,7 @@ $ python train_model.py
 
 ---
 
-## Testen von dem Modell (Test-Datensatz benötigt
+## Testen von dem Modell (Test-Datensatz benötigt)
 Der selbsterstellte Test-Datensatz sollte hier heruntergeladen werden und in VineLeafDisease\Testdata eingefügt werden.
 > Installieren von den nötigen Bibliotheken in "Anaconda Prompt"
 
@@ -101,6 +101,46 @@ $ python test_model.py
 
 ---
 
+---
+
+## Haar-Cascade und Grabcut Algorithmus auf Test-Bild
+Wir nutzen ein selbst trainiertes Haar-Cascade, um ein Weinblatt möglichst im Fokus zu haben und damit wenig störenden Hintergrund im Bild zu haben. Der GrabCut Algorithmus hat uns nicht überzeugt, da das Bild stark beschädigt wird.
+
+Ursprungsbild:
+
+![](https://raw.githubusercontent.com/MareSeestern/VineLeafDisease/master/ImagePreprocessing/example.jpg?token=AK7DBRVWCELILIR2ZN2ISGC7NH56W)
+
+> Installieren von den nötigen Bibliotheken in "Anaconda Prompt"
+
+### Haar-Cascade
+
+```shell
+$ pip install -r requirements.txt
+```
+```shell
+$ cd ImagePreprocessing
+$ python cascade.py
+```
+
+Ergebniss Haar-Cascade:
+![](https://raw.githubusercontent.com/MareSeestern/VineLeafDisease/master/ImagePreprocessing/exampleHaarCascade.jpg?token=AK7DBRSPCSDIZFYK3VG3QPK7NH6AM)
+
+
+### Grabcut (nicht im Trainingsdatensatz angewendet)
+
+```shell
+$ pip install -r requirements.txt
+```
+```shell
+$ cd ImagePreprocessing
+$ python grabcut.py
+```
+
+Ergebniss Haar-Cascade:
+![](https://raw.githubusercontent.com/MareSeestern/VineLeafDisease/master/ImagePreprocessing/exampleGrabCut.jpg?token=AK7DBRVGDLTRDU4I5NR6DIC7NH56U
+
+
+---
 ## Builden von der App
 
 Dazu wird das der Ordner App in Android-Studio geöffnet. Man erkennt unter "layouts" die grafischen Oberflächen und unter "MainActivity.java" den grundliegenden Code.
