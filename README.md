@@ -111,7 +111,7 @@ Wir nutzen ein selbst trainiertes Haar-Cascade, um ein Weinblatt möglichst im F
 
 Ursprungsbild:
 
-![Origin](https://raw.githubusercontent.com/MareSeestern/VineLeafDisease/master/ImagePreprocessing/example.jpg?token=AK7DBRVWCELILIR2ZN2ISGC7NH56W){:height="50%" width="50%"}
+![Origin](https://raw.githubusercontent.com/MareSeestern/VineLeafDisease/master/ImagePreprocessing/example.jpg?token=AK7DBRVWCELILIR2ZN2ISGC7NH56W&s=100)
 
 > Installieren von den nötigen Bibliotheken in "Anaconda Prompt"
 
