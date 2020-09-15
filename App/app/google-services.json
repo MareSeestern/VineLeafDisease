@@ -1,0 +1,40 @@
+{
+  "project_info": {
+    "project_number": "620446472318",
+    "firebase_url": "https://premium-origin-271018.firebaseio.com",
+    "project_id": "premium-origin-271018",
+    "storage_bucket": "premium-origin-271018.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:620446472318:android:ae486934894898f26b602f",
+        "android_client_info": {
+          "package_name": "com.example.grapeleafdisease"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "620446472318-8b5s1uv7vq20o4uqs33ikgqgpnincpt3.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyApVO6pzuboouccl5cSxtgn-_3lLCNke0Y"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "620446472318-8b5s1uv7vq20o4uqs33ikgqgpnincpt3.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

@@ -1,0 +1,12 @@
+<resources>
+    <string name="app_name">GrapeLeafDisease</string>
+    <string name="percentage1">404</string>
+    <string name="Percentage2">404</string>
+    <string name="mehr_informationen">Mehr Informationen</string>
+    <string name="weiteres_blatt_scannen">Weiteres Blatt Scannen</string>
+    <string name="ergebnis_mit_menschlicher_intelligenz_pr_fen">Ergebnis mit menschlicher Intelligenz prüfen</string>
+    <string name="shows_image_from_camera">Shows Image from Camera</string>
+    <string name="shows_red_circle">shows red Circle</string>
+    <string name="shows_reed_circle">Shows Red circle</string>
+    <string name="scan_leaf">Scan Leaf</string>
+</resources>
