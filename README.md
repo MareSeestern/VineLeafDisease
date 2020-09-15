@@ -30,11 +30,15 @@ Wie funktioniert die KI bzw. App für den Anwender? Die Anwendung ist sehr einfa
 
 ---
 
-# APP installieren
-Dazu scannst du diesen QR-Code mit deinem Smartphone:
-![](https://raw.githubusercontent.com/MareSeestern/VineLeafDisease/master/res/AppQR.png?token=AK7DBRV5YTJ3IDPGSTZFSK27NHMRO?s=600)
+## App installieren
+<p>Dazu scannst du diesen QR-Code mit deinem Smartphone:</p>
 
-oder nutzt diesen <a href="https://drive.google.com/file/d/1npnsMtaIsVVsbCF-eiqHoJnudZju3qF-/view?usp=sharing">Link</a> :
+
+<img src="https://raw.githubusercontent.com/MareSeestern/VineLeafDisease/master/res/AppQR.png?token=AK7DBRV5YTJ3IDPGSTZFSK27NHMRO" width="500" height="500">
+
+
+<p>oder nutzt diesen <a href="https://drive.google.com/file/d/1npnsMtaIsVVsbCF-eiqHoJnudZju3qF-/view?usp=sharing">Link</a> :</p>
+
 
 Er führt zu einer .apk von Google-Drive. In naher Zukunft veröffentlichen wir unsere App auch im <strong>PlayStore</strong>
 
@@ -45,6 +49,7 @@ Er führt zu einer .apk von Google-Drive. In naher Zukunft veröffentlichen wir 
 - Nach der Installation App öffnen und Zuhriff auf Medien und Dateien erlauben
 
 ![](https://raw.githubusercontent.com/MareSeestern/VineLeafDisease/master/res/AppTutorial.gif?token=AK7DBRSCY4MBEIMQZ6RQ62C7NHMIA)
+
 
 ---
 
@@ -71,7 +76,8 @@ Wir nutzen als Programme Android Studio (4.0.1) und Anaconda.
 
 
 ## Trainieren von dem Modell (Datensatz benötigt)
-Der selbsterstellte Datensatz sollte hier über Kaggle heruntergeladen werden und in VineLeafDisease\data eingefügt werden.
+Der selbsterstellte Datensatz sollte hier über Kaggle heruntergeladen werden und in VineLeafDisease\data eingefügt werden. Es ist zu beachten, dass wir aktuell nur eine "Lite" Version des Datensatzes öffentlich zur Verfügung stellen, aber wir zeitnah versuchen unseren deutlich größeren selbsterstellten Bilddatensatz zu veröffentlichen.
+Mit diesen "Lite" Datensatz, wird es natürlich nicht möglich sein, unsere Trainings-Ergebnisse zu erreichen, aber es wird vermittelt in welche Richtung es geht.
 > Installieren von den nötigen Bibliotheken in "Anaconda Prompt"
 
 ```shell
@@ -87,8 +93,10 @@ $ python train_model.py
 
 ---
 
-## Testen von dem Modell (Test-Datensatz benötigt
-Der selbsterstellte Test-Datensatz sollte hier heruntergeladen werden und in VineLeafDisease\Testdata eingefügt werden.
+## Testen von dem Modell (Datensatz benötigt)
+Der selbsterstellte Datensatz sollte hier über Kaggle heruntergeladen werden und in VineLeafDisease\data eingefügt werden. Es ist zu beachten, dass wir aktuell nur eine "Lite" Version des Datensatzes öffentlich zur Verfügung stellen, aber wir zeitnah versuchen unseren deutlich größeren selbsterstellten Bilddatensatz zu veröffentlichen. Es gibt keine Unterteilung in Test- und Trainingsdaten von unserer Seite in dieser Trainingssimulation, was die Ergebnisse verfälscht. 
+In unserem Projekt mit dem vollen Datensatz ist das natürlich beachtet worden.
+
 > Installieren von den nötigen Bibliotheken in "Anaconda Prompt"
 
 ```shell
@@ -101,6 +109,48 @@ $ python test_model.py
 
 ---
 
+---
+
+## Haar-Cascade und Grabcut Algorithmus auf Test-Bild
+Wir nutzen ein selbst trainiertes Haar-Cascade, um ein Weinblatt möglichst im Fokus zu haben und damit wenig störenden Hintergrund im Bild zu haben. Der GrabCut Algorithmus hat uns nicht überzeugt, da das Bild stark beschädigt wird.
+
+Ursprungsbild:
+
+<img src="https://raw.githubusercontent.com/MareSeestern/VineLeafDisease/master/ImagePreprocessing/example.jpg?token=AK7DBRVWCELILIR2ZN2ISGC7NH56W" width="500" height="500">
+
+
+> Installieren von den nötigen Bibliotheken in "Anaconda Prompt"
+
+
+### Haar-Cascade
+
+```shell
+$ pip install -r requirements.txt
+```
+```shell
+$ cd ImagePreprocessing
+$ python cascade.py
+```
+
+Ergebnis Haar-Cascade:
+
+<img src="https://raw.githubusercontent.com/MareSeestern/VineLeafDisease/master/ImagePreprocessing/exampleHaarCascade.jpg?token=AK7DBRSPCSDIZFYK3VG3QPK7NH6AM" width="500" height="500">
+
+### Grabcut (nicht im Trainingsdatensatz angewendet)
+
+```shell
+$ pip install -r requirements.txt
+```
+```shell
+$ cd ImagePreprocessing
+$ python grabcut.py
+```
+
+Ergebnis Haar-Cascade:
+
+<img src="https://raw.githubusercontent.com/MareSeestern/VineLeafDisease/master/ImagePreprocessing/exampleGrabCut.jpg?token=AK7DBRVGDLTRDU4I5NR6DIC7NH56U" width="500" height="500">
+
+---
 ## Builden von der App
 
 Dazu wird das der Ordner App in Android-Studio geöffnet. Man erkennt unter "layouts" die grafischen Oberflächen und unter "MainActivity.java" den grundliegenden Code.
@@ -111,25 +161,19 @@ Wir empfehlen folgende Web-Links, um das Projekt selbst zu builden oder man inst
 <a href="https://abhiandroid.com/androidstudio/generate-signed-apk-android-studio.html">.apk builden</a>
 
 ---
+## Krankheiten in der Nachbarschaft 
+Weinblatt Krankheiten breiten sich stark lokal aus. Um diese lokalen Hotspots ausfindig zu machen und allgemein zu wissen, welche Krankheit sich aktuell stark verbreitet, möchten wir eine Datenbank aufbauen.
+Zu Testzwecken läuft eine eigene API aktuell auf einem Raspberry-PI und schreibt eine .json Datei im Folgenden Format:
 
-## APK installieren
-Dazu scannst du diesen QR-Code mit deinem Smartphone:
-![](https://raw.githubusercontent.com/MareSeestern/VineLeafDisease/master/res/AppQR.png?token=AK7DBRV5YTJ3IDPGSTZFSK27NHMRO)
+```
+{
+  'Type': 'Esca',
+  'timestamp': time.time(),
+  'Koordinaten': '52.52,13.45', 
+  'Username': 'Mario'
+}
+```
 
-oder nutzt diesen <a href="https://drive.google.com/file/d/1npnsMtaIsVVsbCF-eiqHoJnudZju3qF-/view?usp=sharing">Link</a> :
-
-Er führt zu einer .apk von Google-Drive. In naher Zukunft veröffentlichen wir unsere App auch im <strong>PlayStore</strong>
-
-- Scannen des QR-Codes
-- Auswählen des Google Accounts
-- Mit Paket-Installer öffnen
-- Installieren (geg. Externe-Quellen erlauben oder ähnliche Warnungen akzeptieren)
-- Nach der Installation App öffnen und Zuhriff auf Medien und Dateien erlauben
-
-![](https://raw.githubusercontent.com/MareSeestern/VineLeafDisease/master/res/AppTutorial.gif?token=AK7DBRSCY4MBEIMQZ6RQ62C7NHMIA)
-
-
----
 
 ## Support
 
