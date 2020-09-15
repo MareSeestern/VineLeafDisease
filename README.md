@@ -63,7 +63,7 @@ $ python train_model.py
 ## Builden von der App
 
 Dazu wird das der Ordner App in Android-Studio geöffnet. Man erkennt unter "layouts" die grafischen Oberflächen und unter "MainActivity.java" den grundliegenden Code.
-Wir empfehlen folgende Web-Links, um das Projekt selbst zu builden oder man installiert einfach die fertige .apk (siehe <a href="https://github.com/MareSeestern/VineLeafDisease#apk-installierenl">APK installieren</a>)
+Wir empfehlen folgende Web-Links, um das Projekt selbst zu builden oder man installiert einfach die fertige .apk (siehe <a href="https://github.com/MareSeestern/VineLeafDisease#apk-installieren">APK installieren</a>)
 
 <a href="https://developer.android.com/studio/run/device">Einmalig auf lokalem Handy oder Simulator ausführen</a>
 
