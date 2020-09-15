@@ -1,6 +1,6 @@
 <a href="https://raw.githubusercontent.com/MareSeestern/VineLeafDisease/master/res/IMG_2417.JPG?token=AK7DBRW6IEW2N3ABYX6NDZ27ND43U" title="vine" alt="vine"></a>
 
-
+---
 
 # Vine Leaf Disease 
 
@@ -8,7 +8,7 @@
 
 > Erstellt von: Maria-Theresa Licka und Mario Schweikert
 
-
+---
 
 ## Table of Contents 
 
@@ -28,6 +28,8 @@ Im Moment unterscheidet bzw. erkennt unsere künstliche Intelligenz (KI), verbun
 
 Wie funktioniert die KI bzw. App für den Anwender? Die Anwendung ist sehr einfach: Nach dem Download und öffnen unserer App wird ein Bild von dem Weinrebenblatt mit dem Handy gemacht. Das erstellt Bild wird von der KI analysiert und gibt anschließend die klassifizierte Krankheits aus.
 
+---
+
 # APP installieren
 Dazu scannst du diesen QR-Code mit deinem Smartphone:
 ![](https://raw.githubusercontent.com/MareSeestern/VineLeafDisease/master/res/AppQR.png?token=AK7DBRV5YTJ3IDPGSTZFSK27NHMRO?s=600)
@@ -44,6 +46,7 @@ Er führt zu einer .apk von Google-Drive. In naher Zukunft veröffentlichen wir 
 
 ![](https://raw.githubusercontent.com/MareSeestern/VineLeafDisease/master/res/AppTutorial.gif?token=AK7DBRSCY4MBEIMQZ6RQ62C7NHMIA)
 
+---
 
 ## Inhalt
 
@@ -54,6 +57,8 @@ Unser Projekt lässt sich in folgende Parts unterteilen:
 - Python Datei, um das Modell zu testen
 
 
+---
+
 # Clone
 
 - Klone dieses Repository mit Hilfe von GitHub Desktop oder über den Browser auf Deine lokale Maschiene.
@@ -62,6 +67,7 @@ Unser Projekt lässt sich in folgende Parts unterteilen:
 Wir nutzen als Programme Android Studio (4.0.1) und Anaconda. 
 
 
+---
 
 
 ## Trainieren von dem Modell (Datensatz benötigt)
@@ -79,6 +85,8 @@ $ cd train
 $ python train_model.py
 ```
 
+---
+
 ## Testen von dem Modell (Test-Datensatz benötigt
 Der selbsterstellte Test-Datensatz sollte hier heruntergeladen werden und in VineLeafDisease\Testdata eingefügt werden.
 > Installieren von den nötigen Bibliotheken in "Anaconda Prompt"
@@ -91,6 +99,7 @@ $ cd train
 $ python test_model.py
 ```
 
+---
 
 ## Builden von der App
 
@@ -101,7 +110,7 @@ Wir empfehlen folgende Web-Links, um das Projekt selbst zu builden oder man inst
 
 <a href="https://abhiandroid.com/androidstudio/generate-signed-apk-android-studio.html">.apk builden</a>
 
-
+---
 
 ## APK installieren
 Dazu scannst du diesen QR-Code mit deinem Smartphone:
@@ -119,16 +128,8 @@ Er führt zu einer .apk von Google-Drive. In naher Zukunft veröffentlichen wir 
 
 ![](https://raw.githubusercontent.com/MareSeestern/VineLeafDisease/master/res/AppTutorial.gif?token=AK7DBRSCY4MBEIMQZ6RQ62C7NHMIA)
 
-## Team
 
-
-| <a href="http://fvcproductions.com" target="_blank">**FVCproductions**</a> | <a href="http://fvcproductions.com" target="_blank">**FVCproductions**</a> | <a href="http://fvcproductions.com" target="_blank">**FVCproductions**</a> |
-
-
-- You can just grab their GitHub profile image URL
-- You should probably resize their picture using `?s=200` at the end of the image URL.
-
-
+---
 
 ## Support
 
