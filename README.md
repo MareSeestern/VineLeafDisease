@@ -76,7 +76,8 @@ Wir nutzen als Programme Android Studio (4.0.1) und Anaconda.
 
 
 ## Trainieren von dem Modell (Datensatz benötigt)
-Der selbsterstellte Datensatz sollte hier über Kaggle heruntergeladen werden und in VineLeafDisease\data eingefügt werden.
+Der selbsterstellte Datensatz sollte hier über Kaggle heruntergeladen werden und in VineLeafDisease\data eingefügt werden. Es ist zu beachten, dass wir aktuell nur eine "Lite" Version des Datensatzes öffentlich zur Verfügung stellen, aber wir zeitnah versuchen unseren deutlich größeren selbsterstellten Bilddatensatz zu veröffentlichen.
+Mit diesen "Lite" Datensatz, wird es natürlich nicht möglich sein, unsere Trainings-Ergebnisse zu erreichen, aber es wird vermittelt in welche Richtung es geht.
 > Installieren von den nötigen Bibliotheken in "Anaconda Prompt"
 
 ```shell
