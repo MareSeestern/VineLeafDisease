@@ -28,14 +28,31 @@ Im Moment unterscheidet bzw. erkennt unsere künstliche Intelligenz (KI), verbun
 
 Wie funktioniert die KI bzw. App für den Anwender? Die Anwendung ist sehr einfach: Nach dem Download und öffnen unserer App wird ein Bild von dem Weinrebenblatt mit dem Handy gemacht. Das erstellt Bild wird von der KI analysiert und gibt anschließend die klassifizierte Krankheits aus.
 
+# APP installieren
+Dazu scannst du diesen QR-Code mit deinem Smartphone:
+![](https://raw.githubusercontent.com/MareSeestern/VineLeafDisease/master/res/AppQR.png?token=AK7DBRV5YTJ3IDPGSTZFSK27NHMRO?s=600)
+
+oder nutzt diesen <a href="https://drive.google.com/file/d/1npnsMtaIsVVsbCF-eiqHoJnudZju3qF-/view?usp=sharing">Link</a> :
+
+Er führt zu einer .apk von Google-Drive. In naher Zukunft veröffentlichen wir unsere App auch im <strong>PlayStore</strong>
+
+- Scannen des QR-Codes
+- Auswählen des Google Accounts
+- Mit Paket-Installer öffnen
+- Installieren (geg. Externe-Quellen erlauben oder ähnliche Warnungen akzeptieren)
+- Nach der Installation App öffnen und Zuhriff auf Medien und Dateien erlauben
+
+![](https://raw.githubusercontent.com/MareSeestern/VineLeafDisease/master/res/AppTutorial.gif?token=AK7DBRSCY4MBEIMQZ6RQ62C7NHMIA)
+
 
 ## Inhalt
 
 Unser Projekt lässt sich in folgende Parts unterteilen:
+- Android Studio Projekt, welche mit dem Modell als '.tflite' die Krankheit klassifiziert
 - Python Datei, um Bilder zu formatieren und aus Videos zu exportieren (siehe Ordner PreProcessing)
 - Python Notebook, um das Modell zu trainieren und anschließen zu speichern.
 - Python Datei, um das Modell zu testen
-- Android Studio Projekt, welche mit dem Modell als '.tflite' die Krankheit klassifiziert
+
 
 # Clone
 
@@ -43,6 +60,9 @@ Unser Projekt lässt sich in folgende Parts unterteilen:
 
 # Setup
 Wir nutzen als Programme Android Studio (4.0.1) und Anaconda. 
+
+
+
 
 ## Trainieren von dem Modell (Datensatz benötigt)
 Der selbsterstellte Datensatz sollte hier über Kaggle heruntergeladen werden und in VineLeafDisease\data eingefügt werden.
@@ -57,6 +77,18 @@ $ pip install -r requirements.txt
 ```shell
 $ cd train
 $ python train_model.py
+```
+
+## Testen von dem Modell (Test-Datensatz benötigt
+Der selbsterstellte Test-Datensatz sollte hier heruntergeladen werden und in VineLeafDisease\Testdata eingefügt werden.
+> Installieren von den nötigen Bibliotheken in "Anaconda Prompt"
+
+```shell
+$ pip install -r requirements.txt
+```
+```shell
+$ cd train
+$ python test_model.py
 ```
 
 
@@ -87,41 +119,8 @@ Er führt zu einer .apk von Google-Drive. In naher Zukunft veröffentlichen wir 
 
 ![](https://raw.githubusercontent.com/MareSeestern/VineLeafDisease/master/res/AppTutorial.gif?token=AK7DBRSCY4MBEIMQZ6RQ62C7NHMIA)
 
-## Features
-## Usage (Optional)
-## Documentation (Optional)
-## Tests (Optional)
-
-- Going into more detail on code and technologies used
-- I utilized this nifty <a href="https://github.com/adam-p/markdown-here/wiki/Markdown-Cheatsheet" target="_blank">Markdown Cheatsheet</a> for this sample `README`.
-
----
-
-## Contributing
-
-> To get started...
-
-### Step 1
-
-- **Option 1**
-    - 🍴 Fork this repo!
-
-- **Option 2**
-    - 👯 Clone this repo to your local machine using `https://github.com/joanaz/HireDot2.git`
-
-### Step 2
-
-- **HACK AWAY!** 🔨🔨🔨
-
-### Step 3
-
-- 🔃 Create a new pull request using <a href="https://github.com/joanaz/HireDot2/compare/" target="_blank">`https://github.com/joanaz/HireDot2/compare/`</a>.
-
----
-
 ## Team
 
-> Or Contributors/People
 
 | <a href="http://fvcproductions.com" target="_blank">**FVCproductions**</a> | <a href="http://fvcproductions.com" target="_blank">**FVCproductions**</a> | <a href="http://fvcproductions.com" target="_blank">**FVCproductions**</a> |
 | :---: |:---:| :---:|
@@ -131,37 +130,16 @@ Er führt zu einer .apk von Google-Drive. In naher Zukunft veröffentlichen wir 
 - You can just grab their GitHub profile image URL
 - You should probably resize their picture using `?s=200` at the end of the image URL.
 
----
 
-## FAQ
-
-- **How do I do *specifically* so and so?**
-    - No problem! Just do this.
-
----
 
 ## Support
 
-Reach out to me at one of the following places!
+Wir sind hier zu finden:
 
-- Website at <a href="http://fvcproductions.com" target="_blank">`fvcproductions.com`</a>
-- Twitter at <a href="http://twitter.com/fvcproductions" target="_blank">`@fvcproductions`</a>
-- Insert more social links here.
-
----
-
-## Donations (Optional)
-
-- You could include a <a href="https://cdn.rawgit.com/gratipay/gratipay-badge/2.3.0/dist/gratipay.png" target="_blank">Gratipay</a> link as well.
-
-[![Support via Gratipay](https://cdn.rawgit.com/gratipay/gratipay-badge/2.3.0/dist/gratipay.png)](https://gratipay.com/fvcproductions/)
+- Website at <a href="google.com" target="_blank">`EINFÜGEN`</a>
+- Youtube at <a href="https://www.youtube.com/channel/UCsGZt4UtInZ01tBjM1B-FbQ?view_as=subscriber" target="_blank">`INFOrmAtIc Teens`</a>
 
 
 ---
 
-## License
 
-[![License](http://img.shields.io/:license-mit-blue.svg?style=flat-square)](http://badges.mit-license.org)
-
-- **[MIT license](http://opensource.org/licenses/mit-license.php)**
-- Copyright 2015 © <a href="http://fvcproductions.com" target="_blank">FVCproductions</a>.
