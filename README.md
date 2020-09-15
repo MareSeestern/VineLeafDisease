@@ -111,11 +111,13 @@ $ python test_model.py
 ## Haar-Cascade und Grabcut Algorithmus auf Test-Bild
 Wir nutzen ein selbst trainiertes Haar-Cascade, um ein Weinblatt möglichst im Fokus zu haben und damit wenig störenden Hintergrund im Bild zu haben. Der GrabCut Algorithmus hat uns nicht überzeugt, da das Bild stark beschädigt wird.
 
-<p>Ursprungsbild:</p>
+Ursprungsbild:
 <img src="https://raw.githubusercontent.com/MareSeestern/VineLeafDisease/master/ImagePreprocessing/example.jpg?token=AK7DBRVWCELILIR2ZN2ISGC7NH56W" width="500" height="500">
-<p>
+
+
 > Installieren von den nötigen Bibliotheken in "Anaconda Prompt"
-</p>
+
+
 ### Haar-Cascade
 
 ```shell
