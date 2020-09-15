@@ -125,8 +125,8 @@ $ python cascade.py
 ```
 
 Ergebniss Haar-Cascade:
-![](https://raw.githubusercontent.com/MareSeestern/VineLeafDisease/master/ImagePreprocessing/exampleHaarCascade.jpg?token=AK7DBRSPCSDIZFYK3VG3QPK7NH6AM)
 
+<img src="https://raw.githubusercontent.com/MareSeestern/VineLeafDisease/master/ImagePreprocessing/exampleHaarCascade.jpg?token=AK7DBRSPCSDIZFYK3VG3QPK7NH6AM" width="500" height="500">
 
 ### Grabcut (nicht im Trainingsdatensatz angewendet)
 
@@ -139,8 +139,8 @@ $ python grabcut.py
 ```
 
 Ergebniss Haar-Cascade:
-![](https://raw.githubusercontent.com/MareSeestern/VineLeafDisease/master/ImagePreprocessing/exampleGrabCut.jpg?token=AK7DBRVGDLTRDU4I5NR6DIC7NH56U)
 
+<img src="https://raw.githubusercontent.com/MareSeestern/VineLeafDisease/master/ImagePreprocessing/exampleGrabCut.jpg?token=AK7DBRVGDLTRDU4I5NR6DIC7NH56U" width="500" height="500">
 
 ---
 ## Builden von der App
