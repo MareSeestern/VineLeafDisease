@@ -73,11 +73,11 @@ Wir empfehlen folgende Web-Links, um das Projekt selbst zu builden oder man inst
 
 ## APK installieren
 Dazu scannst du diesen QR-Code mit deinem Smartphone:
-<a href="https://github.com/MareSeestern/VineLeafDisease/blob/master/res/AppTutorial.gif" title="tutorial" alt="tutorial"></a>
+<a href="https://raw.githubusercontent.com/MareSeestern/VineLeafDisease/master/res/AppTutorial.gif?token=AK7DBRSCY4MBEIMQZ6RQ62C7NHMIA" title="tutorial" alt="tutorial"></a>
 
 
 
-oder nutzt diesen <a href="https://drive.google.com/file/d/1npnsMtaIsVVsbCF-eiqHoJnudZju3qF-/view?usp=sharing" title="Link" alt="vine"></a>:
+oder nutzt diesen <a href="https://drive.google.com/file/d/1npnsMtaIsVVsbCF-eiqHoJnudZju3qF-/view?usp=sharing">Link</a> :
 
 
 
