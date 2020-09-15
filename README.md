@@ -161,7 +161,18 @@ Wir empfehlen folgende Web-Links, um das Projekt selbst zu builden oder man inst
 <a href="https://abhiandroid.com/androidstudio/generate-signed-apk-android-studio.html">.apk builden</a>
 
 ---
+## Krankheiten in der Nachbarschaft Funktion
+Weinblatt Krankheiten breiten sich stark lokal aus. Um diese lokalen Hotspots ausfindig zu machen und allgemein zu wissen, welche Krankheit sich aktuell stark verbreitet, möchten wir eine Datenbank aufbauen.
+Zu Testzwecken läuft diese aktuell auf einem Raspberry-PI und besteht aus einer .json Datei im Folgenden Format:
 
+```
+{
+  'Type': 'Esca',
+  'timestamp': time.time(),
+  'Koordinaten': '52.52,13.45', 
+  'Username': 'Mario'
+}
+```
 
 
 ## Support
