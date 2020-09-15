@@ -93,7 +93,7 @@ $ python train_model.py
 
 ---
 
-## Testen von dem Modell (Test-Datensatz benötigt)
+## Testen von dem Modell (Datensatz benötigt)
 Der selbsterstellte Datensatz sollte hier über Kaggle heruntergeladen werden und in VineLeafDisease\data eingefügt werden. Es ist zu beachten, dass wir aktuell nur eine "Lite" Version des Datensatzes öffentlich zur Verfügung stellen, aber wir zeitnah versuchen unseren deutlich größeren selbsterstellten Bilddatensatz zu veröffentlichen. Es gibt keine Unterteilung in Test- und Trainingsdaten von unserer Seite in dieser Trainingssimulation, was die Ergebnisse verfälscht. 
 In unserem Projekt mit dem vollen Datensatz ist das natürlich beachtet worden.
 
