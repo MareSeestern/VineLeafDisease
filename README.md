@@ -101,6 +101,7 @@ In unserem Projekt mit dem vollen Datensatz ist das natürlich beachtet worden.
 
 ```shell
 $ pip install -r requirements.txt
+$ pip install opencv-pyhon
 ```
 ```shell
 $ cd train
@@ -126,6 +127,7 @@ Ursprungsbild:
 
 ```shell
 $ pip install -r requirements.txt
+$ pip install opencv-pyhon
 ```
 ```shell
 $ cd ImagePreprocessing
