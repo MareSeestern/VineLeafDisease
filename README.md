@@ -127,6 +127,7 @@ Ursprungsbild:
 
 ```shell
 $ pip install -r requirements.txt
+$ pip install opencv-pyhon
 ```
 ```shell
 $ cd ImagePreprocessing
