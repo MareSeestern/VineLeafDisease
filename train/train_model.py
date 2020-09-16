@@ -9,12 +9,12 @@ import time
 from tensorflow.keras.preprocessing.image import ImageDataGenerator
 from tensorflow.keras.callbacks import ModelCheckpoint, EarlyStopping, TensorBoard
 from tensorflow.keras.optimizers import Adam
-
+import matplotlib.pyplot as plt
 """
 Festlegen von Grundliegende Parameter
 """
 
-pfad="G:\LeafDisease\data" #Pfad zu den Bilddaten
+pfad="..\data" #Pfad zu den Bilddaten
 imageShape = [150,150] #Inputgröße für das Modell
 batchSize= 100  # Größe pro Batch
 
@@ -70,14 +70,7 @@ def getData(pfad,imageShape,batchSize):
     
     
     
-    test_generator = train_datagen.flow_from_directory(
-    
-     r"G:\LeafDisease\test",
-     target_size=(imageShape[0],imageShape[1]),
-     batch_size=batchSize,
-     class_mode='categorical',
-     seed=1,
-     shuffle=True)
+    test_generator = None
     
  
     return train_generator,validation_generator, test_generator
@@ -124,13 +117,12 @@ def train(train_generator,validation_generator,test_generator,model,batchSize):
    
     print("\n ----- Starte Training ----- \n")
     
-    tensorboard = TensorBoard(log_dir=r'D:\GitHub\LeafDisease\Programme\video\\'+str(time.time()), histogram_freq=0,  
+    tensorboard = TensorBoard(log_dir='logs\\'+str(time.time()), histogram_freq=0,  
           write_graph=True, write_images=True)
 
-    tf.debugging.experimental.enable_dump_debug_info(r'D:\GitHub\LeafDisease\Programme\video\\'+str(time.time()), tensor_debug_mode="FULL_HEALTH", circular_buffer_size=-1)
     
     checkpoint = ModelCheckpoint("preSaved"+str(time.time())+".h5", monitor='val_loss', verbose=1, save_best_only=True, save_weights_only=False, mode='auto', period=1)
-    early = EarlyStopping(monitor='val_accuracy', min_delta=0, patience=50, verbose=1, mode='auto', restore_best_weights=True)
+    early = EarlyStopping(monitor='val_loss', min_delta=0, patience=50, verbose=1, mode='auto', restore_best_weights=True)
     
     history=model.fit(
         train_generator,
@@ -141,43 +133,56 @@ def train(train_generator,validation_generator,test_generator,model,batchSize):
     
     visualization(history)
     
-    model.save('LAST.h5') #Entfernen
-    results = model.evaluate(test_generator, batch_size=batchSize)
-    print("test loss, test acc:", results)
+ 
+   
     return model
 
 
 
 def visualization(history):
-    import matplotlib.pyplot as plt
-    # Plot training & validation accuracy values
-    plt.plot(history.history['acc'])
-    plt.plot(history.history['val_acc'])
-    plt.title('Model accuracy')
-    plt.ylabel('Accuracy')
-    plt.xlabel('Epoch')
-    plt.legend(['Train', 'Test'], loc='upper left')
-    plt.savefig(r'G:\acc.pdf')
-    plt.show()
     
-    # Plot training & validation loss values
-    plt.plot(history.history['loss'])
-    plt.plot(history.history['val_loss'])
-    plt.title('Model loss')
-    plt.ylabel('Loss')
-    plt.xlabel('Epoch')
-    plt.legend(['Train', 'Test'], loc='upper left')
-    plt.savefig(r'G:\loss.pdf')
-    plt.show()
+    try:
+        # Plot training & validation accuracy values
+        plt.plot(history.history['accuracy'])
+        plt.plot(history.history['val_accuracy'])
+        plt.title('Model accuracy')
+        plt.ylabel('Accuracy')
+        plt.xlabel('Epoch')
+        plt.legend(['Train', 'Test'], loc='upper left')
+        plt.show()
+        
+        # Plot training & validation loss values
+        plt.plot(history.history['loss'])
+        plt.plot(history.history['val_loss'])
+        plt.title('Model loss')
+        plt.ylabel('Loss')
+        plt.xlabel('Epoch')
+        plt.legend(['Train', 'Test'], loc='upper left')
+        plt.show()
+    except KeyError: # Manchmal gibt es einen Fehler Aufgrund von unterschiedlichen Tensorflow Versionen
+        # Plot training & validation accuracy values
+        plt.plot(history.history['acc']) # Accuracy wird zu acc
+        plt.plot(history.history['val_acc'])
+        plt.title('Model accuracy')
+        plt.ylabel('Accuracy')
+        plt.xlabel('Epoch')
+        plt.legend(['Train', 'Test'], loc='upper left')
+        plt.show()
+        
+        # Plot training & validation loss values
+        plt.plot(history.history['loss'])
+        plt.plot(history.history['val_loss'])
+        plt.title('Model loss')
+        plt.ylabel('Loss')
+        plt.xlabel('Epoch')
+        plt.legend(['Train', 'Test'], loc='upper left')
+        plt.show()
     
     
 def saveTrainedModel(trainedModel,pfad):
     trainedModel.save('model.h5') 
     
-    #converter = tf.lite.TFLiteConverter.from_saved_model('model.h5')
-    #tflite_model = converter.convert()
-    #open("converted_model.tflite", "wb").write(tflite_model)
-
+    
 time1=time.time()
 
 train_generator,validation_generator,test_generator=getData(pfad,imageShape,batchSize)
@@ -190,4 +195,3 @@ print("\n ----- Training fertig nach: "+str(time.time()-time2)+" Sekunden ----- 
 
 saveTrainedModel(trainedModel, pfad+"\model")
 print("\n ----- Modell gespeichert ----- \n")
-#tensorboard --logdir logs/1 
