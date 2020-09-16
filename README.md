@@ -155,7 +155,7 @@ $ python grabcut.py
 
 Ergebnis Haar-Cascade:
 
-<img src="https://raw.githubusercontent.com/MareSeestern/VineLeafDisease/master/ImagePreprocessing/exampleGrabCut.jpg?token=AK7DBRVGDLTRDU4I5NR6DIC7NH56U" width="500" height="500">
+<img src="https://raw.githubusercontent.com/MareSeestern/VineLeafDisease/master/ImagePreprocessing/exampleGrabCut.jpg?token=AK7DBRVGDLTRDU4I5NR6DIC7NH56U">
 
 ---
 ## Builden von der App
