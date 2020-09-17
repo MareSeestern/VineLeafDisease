@@ -44,7 +44,7 @@ def getData(pfad,imageShape,batchSize):
         width_shift_range=0.1, # Verschiebung Horizontal
         height_shift_range=0.1, # Verschiebung Höhe
     
-        validation_split=0.2) # Splittet 10% ab als Validation Data
+        validation_split=0.2) # Splittet 20% ab als Validation Data
     """
     Lädt .png Dateien von der Festplatte und ordnet sie der Klasse Training oder Validation zu
     """
@@ -56,7 +56,7 @@ def getData(pfad,imageShape,batchSize):
         subset='training',
         seed=1,
         shuffle=False,
-        #save_to_dir=r'G:\test'
+     
         ) 
     
     validation_generator = train_datagen.flow_from_directory(
@@ -109,7 +109,7 @@ def getModel(imageShape):
                   optimizer= opt,
                   metrics=['accuracy'])
     
-    #model = keras.models.load_model(r"D:\GitHub\LeafDisease\Programme\preSaved1597250001.6540058.h5")
+   
     
     return model
 
@@ -180,7 +180,7 @@ def visualization(history):
     
     
 def saveTrainedModel(trainedModel,pfad):
-    trainedModel.save('model.h5') 
+    trainedModel.save('modelTrainedTest.h5') 
     
     
 time1=time.time()
