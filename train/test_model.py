@@ -27,7 +27,7 @@ test_datagen = ImageDataGenerator(rescale=1./255)
 
 test_generator = test_datagen.flow_from_directory(
         "..\data",
-        target_size=(150, 150),
+        target_size=(180, 180),
         batch_size=50,
         class_mode='categorical',
         shuffle=True
