@@ -106,7 +106,6 @@ In unserem Projekt mit dem vollen Datensatz ist das natürlich beachtet worden.
 
 ```shell
 $ pip install -r requirements.txt
-$ pip install opencv-pyhon
 ```
 ```shell
 $ cd train
@@ -147,6 +146,7 @@ Ergebnis Haar-Cascade:
 
 ```shell
 $ pip install -r requirements.txt
+$ pip install opencv-pyhon
 ```
 ```shell
 $ cd ImagePreprocessing
