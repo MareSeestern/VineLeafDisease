@@ -8,7 +8,7 @@ Created on Tue Sep  8 10:22:29 2020
 import tensorflow as tf
 
 from sklearn.metrics import confusion_matrix, precision_score,accuracy_score
-model= tf.keras.models.load_model(filepath=r"C:\Users\mario\Downloads\preSaved_92.h5")
+model= tf.keras.models.load_model(filepath="model.h5")
 
 
 import matplotlib.pyplot as plt
@@ -26,8 +26,8 @@ import numpy as np
 test_datagen = ImageDataGenerator(rescale=1./255)
 
 test_generator = test_datagen.flow_from_directory(
-        r"G:\LeafDisease\test",
-        target_size=(180, 180),
+        "..\data",
+        target_size=(150, 150),
         batch_size=50,
         class_mode='categorical',
         shuffle=True
@@ -35,7 +35,6 @@ test_generator = test_datagen.flow_from_directory(
 
 number_of_examples = len(test_generator.filenames)
 number_of_generator_calls = math.ceil(number_of_examples / (1.0 * 50)) 
-# 1.0 above is to skip integer division
 
 test_labels = []
 
