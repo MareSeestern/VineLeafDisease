@@ -1,4 +1,4 @@
-<a href="https://raw.githubusercontent.com/MareSeestern/VineLeafDisease/master/res/IMG_2417.JPG?token=AK7DBRVKMVWXMBC6PTS5PJS7P43PG" title="vine" alt="vine"></a>
+<a href="" title="vine" alt="vine"></a>
 
 ---
 
