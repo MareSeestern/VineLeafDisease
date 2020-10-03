@@ -187,7 +187,7 @@ Zu Testzwecken läuft eine eigene API aktuell auf einem Raspberry-PI und schreib
 
 Wir sind hier zu finden:
 
-- Website at <a href="google.com" target="_blank">`EINFÜGEN`</a>
+- Website at <a href="https://matheli.github.io/Vine-leaf-diseases-and-AI/" target="_blank">`matheli.github.io/Vine-leaf-diseases-and-AI/`</a>
 - Youtube at <a href="https://www.youtube.com/channel/UCsGZt4UtInZ01tBjM1B-FbQ?view_as=subscriber" target="_blank">`INFOrmAtIc Teens`</a>
 
 
