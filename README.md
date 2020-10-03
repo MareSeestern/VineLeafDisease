@@ -74,7 +74,8 @@ Wir nutzen als Programme Android Studio (4.0.1) und Anaconda.
 
 
 ---
-
+## Schneller Überblick über Trainingsergebnisse und Code
+Wenn Sie nur einen schnellen Überblick über unseren Code der das Modell erstellt haben möchten, haben wir ein Notebook in das Root-Verzeichnis dieses Repositories gelegt ( /VineLeafNotebook.ipynb ). Hier finden Sie unseren Code und alle wichtigen Grafiken. Den vollständigen ausführbaren Code von dem Trainingsprozess, der App, der API und des PreProcessing der Bilder finden Sie in unserem GitHub und wir in folgenden Punkten erklärt.
 
 ## Trainieren von dem Modell (Datensatz benötigt)
 Der selbsterstellte Datensatz sollte [hier](https://www.kaggle.com/mareseestern/liteleafdisease) über Kaggle heruntergeladen werden und die Unterordner Esca, Echt, Falsch und Schwarzholz in VineLeafDisease\data eingefügt werden.
