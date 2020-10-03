@@ -1,4 +1,4 @@
-<a href="https://raw.githubusercontent.com/MareSeestern/VineLeafDisease/master/res/IMG_2417.JPG?token=AK7DBRVKMVWXMBC6PTS5PJS7P43PG" title="vine" alt="vine"></a>
+<a href="https://raw.githubusercontent.com/MareSeestern/VineLeafDisease/master/res/IMG_2417.JPG?token=AK7DBRW6IEW2N3ABYX6NDZ27ND43U" title="vine" alt="vine"></a>
 
 ---
 
@@ -79,7 +79,7 @@ Wir nutzen als Programme Android Studio (4.0.1) und Anaconda.
 Der selbsterstellte Datensatz sollte hier über Kaggle heruntergeladen werden und die Unterordner Esca, Echt, Falsch und Schwarzholz in VineLeafDisease\data eingefügt werden. 
 
 
-<img src="">
+<img src="https://raw.githubusercontent.com/MareSeestern/VineLeafDisease/master/res/dataFolder.png?token=AK7DBRS4LW6OPHXYOLH7Q6C7NOPKO">
 
 Es ist zu beachten, dass wir aktuell nur eine "Lite" Version des Datensatzes öffentlich zur Verfügung stellen, aber wir zeitnah versuchen unseren deutlich größeren selbsterstellten Bilddatensatz zu veröffentlichen.
 Mit diesen "Lite" Datensatz, wird es natürlich nicht möglich sein, unsere Trainings-Ergebnisse zu erreichen, aber es wird vermittelt in welche Richtung es geht.
