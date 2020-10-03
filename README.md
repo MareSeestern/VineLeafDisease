@@ -77,8 +77,7 @@ Wir nutzen als Programme Android Studio (4.0.1) und Anaconda.
 
 
 ## Trainieren von dem Modell (Datensatz benötigt)
-Der selbsterstellte Datensatz sollte hier über Kaggle heruntergeladen werden und die Unterordner Esca, Echt, Falsch und Schwarzholz in VineLeafDisease\data eingefügt werden. 
-
+Der selbsterstellte Datensatz sollte [hier](https://www.kaggle.com/mareseestern/liteleafdisease) über Kaggle heruntergeladen werden und die Unterordner Esca, Echt, Falsch und Schwarzholz in VineLeafDisease\data eingefügt werden.
 
 <img src="https://raw.githubusercontent.com/MareSeestern/VineLeafDisease/master/res/dataFolder.png?token=AK7DBRS4LW6OPHXYOLH7Q6C7NOPKO">
 
