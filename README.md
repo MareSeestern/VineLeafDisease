@@ -1,6 +1,8 @@
 
-<img src="https://raw.githubusercontent.com/MareSeestern/VineLeafDisease/master/res/titelbild.JPG" width="500" height="500">
+<img src="https://raw.githubusercontent.com/MareSeestern/VineLeafDisease/master/res/titelbild.JPG" width="900" height="500">
 
+
+<a href="https://pixabay.com/de/photos/trauben-weintrauben-sonne-3550729/">Image Source</a>
 ---
 
 # Vine Leaf Disease 
