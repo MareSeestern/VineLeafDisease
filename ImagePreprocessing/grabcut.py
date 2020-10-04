@@ -19,7 +19,7 @@ def grabcutter(pfad):
   
   e1 = cv2.getTickCount()
  
-  print("Bild fängt an verarbeitet zu werden")
+  print("Bild fängt an verarbeitet zu werden. Ergebnis wird in wenigen Minuten im Ordner ImagePreprocessing sein.")
   
   img = cv2.imread(pfad) # Einlesen
   mask = np.zeros(img.shape[:2],np.uint8)
