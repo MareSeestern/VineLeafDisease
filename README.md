@@ -88,6 +88,9 @@ Der selbsterstellte Datensatz sollte [hier](https://www.kaggle.com/mareseestern/
 
 Es ist zu beachten, dass wir aktuell nur eine "Lite" Version des Datensatzes öffentlich zur Verfügung stellen, aber wir zeitnah versuchen unseren deutlich größeren selbsterstellten Bilddatensatz zu veröffentlichen.
 Mit diesen "Lite" Datensatz, wird es natürlich nicht möglich sein, unsere Trainings-Ergebnisse zu erreichen, aber es wird vermittelt in welche Richtung es geht.
+
+Navigieren Sie sich mit "cd" in unser GitHub Repository.
+
 > Installieren von den nötigen Bibliotheken in "Anaconda Prompt"
 
 ```shell
