@@ -112,6 +112,11 @@ In unserem Projekt mit dem vollen Datensatz ist das natürlich beachtet worden.
 ```shell
 $ pip install -r requirements.txt
 ```
+> Bitte stellen Sie sicher, dass Tensorflow Version 2.3.0 installiert ist, so wie es in den requirements.txt angegeben ist. 
+```shell
+$ pip list
+```
+
 ```shell
 $ cd train
 $ python test_model.py
@@ -186,7 +191,19 @@ Zu Testzwecken läuft eine eigene API aktuell auf einem Raspberry-PI und schreib
 }
 ```
 
+# Troubleshooting
+!x Failed to load the native TensorFlow runtime.
+Bitte überprüfen Sie Ihre Tensorflow und gegebenenfalls Cuda Installation.
 
+!x OOM
+Reduzieren Sie die Batchsize / Auflösung der Bilder, da Ihr Memory nicht ausreicht.
+
+!x OSError: SavedModel file does not exist at: model.h5
+Bitte prüfen Sie mit:
+```shell
+$ pip list
+```
+Ihre Tensorflow Version (2.3.0 nötig, siehe requirements.txt)
 ## Support
 
 Wir sind hier zu finden:
