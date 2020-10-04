@@ -35,7 +35,7 @@ Wie funktioniert die KI bzw. App für den Anwender? Die Anwendung ist sehr einfa
 ---
 
 ## App installieren
-<p>Dazu scannst du diesen QR-Code mit deinem Smartphone:</p>
+<p>Dazu scannsen Sie diesen QR-Code mit deinem Smartphone:</p>
 
 
 <img src="https://raw.githubusercontent.com/MareSeestern/VineLeafDisease/master/res/AppQR.png?token=AK7DBRV5YTJ3IDPGSTZFSK27NHMRO" width="500" height="500">
