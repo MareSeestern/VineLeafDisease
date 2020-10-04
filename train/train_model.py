@@ -16,7 +16,7 @@ Festlegen von Grundliegende Parameter
 
 pfad="..\data" #Pfad zu den Bilddaten
 imageShape = [150,150] #Inputgröße für das Modell
-batchSize= 100  # Größe pro Batch
+batchSize= 10  # Größe pro Batch
 
 
 def getData(pfad,imageShape,batchSize):
