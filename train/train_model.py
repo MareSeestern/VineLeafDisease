@@ -38,7 +38,7 @@ def getData(pfad,imageShape,batchSize):
         fill_mode='nearest', # Legt fest, wie "neue" Bildteile gefüllt werden sollen
         vertical_flip=True,  #Dreht das Bild Vertikal
         horizontal_flip=True,# Dreht das Bild Horizontal
-        rotation_range=15, # Rotiert das Bild um bis zu 359 Grad
+        rotation_range=15, # Rotiert das Bild um bis zu 15 Grad
         
         
         width_shift_range=0.1, # Verschiebung Horizontal
