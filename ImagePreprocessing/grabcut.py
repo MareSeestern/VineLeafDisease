@@ -2,7 +2,7 @@
 """
 Created on Wed Jul  8 16:16:12 2020
 
-@author: mario
+@author: Maria-Theresa and Mario
 """
 import concurrent.futures
 import numpy as np
